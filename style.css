@@ -1,0 +1,141 @@
+/* Bootstrap overridings */
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+	border-bottom: 2px solid #888;
+}
+.row.content {
+	height: 450px;
+}
+
+.sidenav {
+	padding-top: 20px;
+}
+
+.nav-pills > li.active > a {
+	background-color: #555;
+}
+.nav-pills > li.active > a:hover{
+	background-color: #666;
+}
+.nav-pills > li.active > a:focus {
+	background-color: #666;
+}
+
+.btn-group > .btn-primary {
+	background-color: #555;
+	border-color: #888;
+}
+.btn-group > .btn-primary:focus {
+	background-color: #666;
+	border-color: #888;
+}
+
+.well {
+	padding-top: 7px;
+	padding-bottom: 7px;
+	margin-bottom: 5px;
+}
+
+.alert {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+.alert-info {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #101010;
+	border-color: #333;
+	color: #f1f1f1;
+}
+
+hr {
+	margin-top: 5px;
+	margin-bottom: 10px;
+	border-top: 2px solid #cccccc;
+}
+
+footer {
+	background-color: #555;
+	color: white;
+	padding: 15px;
+}
+
+@media screen and (max-width: 767px) {
+	.sidenav {
+		height: auto;
+		padding: 15px;
+	}
+	.row.content {height:auto;} 
+}
+/*--------------------------*/
+
+
+
+/* loader & animation */
+#loader {
+	display: none;
+	position: absolute;
+	top: 40%;
+	left: calc(50% - 20px);
+	border: 5px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 5px solid #333;
+	border-left: 5px solid #777;
+	border-bottom: 5px solid #bbb;
+	width: 40px;
+	height: 40px;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+/*--------------------------*/
+
+
+
+/* charts and chartist.js overridings */
+#chartLine {
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 0px;
+}
+#chartBar {
+	display: none;
+	margin-top: 15px;
+	margin-bottom: 0px;
+}
+.ct-series-a .ct-line {
+	stroke: black;
+	stroke-width: 1px;
+}
+.ct-series-a .ct-point {
+	stroke: black;
+	stroke-width: 5px;
+	stroke-linecap: square;
+}
+.ct-series-a .ct-bar {
+	stroke: black;
+	stroke-width: 7px;
+}
+/*-------------------------------------*/
+
+
+
+/* other */
+#clock {
+	color: #9d9d9d;
+	line-height: 50px;
+	margin-right: 10px;
+}
+#chartDiv {
+	padding-bottom: 20px;
+}
+/*-------------*/
